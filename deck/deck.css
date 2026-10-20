@@ -1,0 +1,11 @@
+/* Teleprompter type: one card per beat, read from an iPad in landscape. */
+.script-cover { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; object-fit: cover; transition: opacity 600ms var(--ease); }
+.script-row { display: flex; gap: 64px; align-items: flex-start; }
+.script-copy { flex: 1; min-width: 0; }
+.script-photo { flex: none; width: 320px; height: 320px; object-fit: cover; object-position: center top; }
+.script-kicker { font-size: 26px; margin-bottom: 44px; }
+.script-lead { font-size: 36px; line-height: 1.3; letter-spacing: -0.01em; color: var(--accent); margin-bottom: 26px; }
+.script-title { font-weight: 600; letter-spacing: -0.04em; line-height: 1.04; white-space: pre-line; margin-bottom: 34px; }
+.script-body { font-size: 50px; line-height: 1.38; letter-spacing: -0.015em; }
+.script-meta { font-family: var(--font-mono); font-size: 24px; line-height: 1.35; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-2); margin-top: 22px; }
+.script-title + .script-meta { margin-top: 58px; }
