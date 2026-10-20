@@ -83,3 +83,6 @@ is bundled too, so the expiring CDN link is never used at runtime; at 1920 px it
   name while introducing them.
 - 1.2 is the official cover image full-bleed, with no text drawn over it (the poster already carries the title,
   names, venue and time). It is the same image in EN and ES.
+- The bottom navigation bar and its ‹ › arrows are operator UI, mounted outside the 1920×1080 stage in
+  `src/main.tsx`, so they keep finger size on the iPad instead of scaling with the deck. It never appears in the
+  stage audit or in the presenter view.

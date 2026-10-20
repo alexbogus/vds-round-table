@@ -9,3 +9,28 @@
 .script-body { font-size: 50px; line-height: 1.38; letter-spacing: -0.015em; }
 .script-meta { font-family: var(--font-mono); font-size: 24px; line-height: 1.35; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-2); margin-top: 22px; }
 .script-title + .script-meta { margin-top: 58px; }
+
+/* Operator nav (mounted outside the stage): real pixels, thumb-sized, never part of the talk. */
+.nav {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 20;
+  display: flex; align-items: center; gap: 8px;
+  padding: 8px 10px calc(8px + env(safe-area-inset-bottom));
+  background: rgba(9, 9, 11, 0.82);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  font-family: var(--font-mono);
+  touch-action: manipulation;
+}
+.nav-jumps { display: flex; flex: 1; flex-wrap: wrap; justify-content: center; gap: 6px; min-width: 0; }
+.nav-chip, .nav-arrow {
+  appearance: none; margin: 0; cursor: pointer; white-space: nowrap;
+  background: rgba(255, 255, 255, 0.06); color: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.14); border-radius: 6px;
+  font: inherit; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase;
+  height: 44px; padding: 0 10px;
+}
+.nav-chip.here { color: #fff; border-color: var(--accent); background: rgba(91, 140, 255, 0.18); }
+.nav-arrow { flex: none; width: 52px; font-size: 26px; line-height: 1; }
+.nav-arrow:disabled { opacity: 0.3; cursor: default; }
+

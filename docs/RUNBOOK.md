@@ -26,6 +26,8 @@ Offline fallback: `dist/` copied to a USB stick + any laptop with a static serve
 | --- | --- |
 | Tap the screen, → ↓ PageDown, Space | next card |
 | ← ↑ PageUp | previous card |
+| Bottom bar ‹ › | previous / next card (finger-sized, for the iPad) |
+| Bottom bar Start…Closing | jump to that section; the current jump is highlighted |
 | 1–7 | jump to scene: 1 open · 2 panel · 3 Q1 · 4 Q2 · 5 Q3 · 6 Q4 · 7 closing |
 | Home / End | first / last card |
 | B or . | blackout (blank the screen while you speak off-script) |
